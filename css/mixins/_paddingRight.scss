@@ -1,0 +1,11 @@
+/**
+ * @description
+ * mixin generates valid padding-right for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin padding-right($padding) {
+    padding-#{$right}: $padding;
+}

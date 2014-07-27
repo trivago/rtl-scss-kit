@@ -1,0 +1,24 @@
+/**
+ * @description
+ * mixin generates valid padding for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin padding($top, $right: null, $bottom: null, $left: null) {
+    @if $right == null {
+        $right: $top;
+    }
+    @if $bottom == null {
+        $bottom: $top;
+    }
+    @if $left== null {
+        $left: $right;
+    }
+    @if $lefting == left {
+        padding: $top $right $bottom $left;
+    } @else if $lefting == right{
+        padding: $top $left $bottom $right;
+    }
+}
