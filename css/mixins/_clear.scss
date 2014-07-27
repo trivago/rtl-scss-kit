@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid clear for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin clear($side)  {
+    @if $side == left {
+        clear: $left;
+    } @else if $side == right {
+        clear: $right;
+    }
+}

@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid border-radius for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin border-radius($lefttop, $righttop, $rightbottom, $leftbottom) {
+    @if $left == left {
+        border-radius: $lefttop $righttop $rightbottom $leftbottom;
+    } @else if $left == right{
+        border-radius: $righttop $lefttop $leftbottom $rightbottom;
+    }
+}

@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid background-position for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin background-position($ypos, $xpos) {
+    @if $xpos == left {
+        background-position: $ypos $left;
+    } @else if $xpos == right {
+        background-position: $ypos $right;
+    }
+}

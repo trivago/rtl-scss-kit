@@ -1,0 +1,17 @@
+/**
+ * @description
+ * mixin generates valid border-left for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin border-left($one, $two: null, $three: null) {
+    @if $three != null {
+        border-#{$left}: $one $two $three;
+    } @else if $two != null {
+        border-#{$left}: $one $two;
+    } @else {
+        border-#{$left}: $one
+    }
+}

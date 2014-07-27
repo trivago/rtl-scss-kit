@@ -1,0 +1,24 @@
+/**
+ * @description
+ * mixin generates valid border-width for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin border-width($top, $right: null, $bottom: null, $left: null) {
+    @if $right == null {
+        $right: $top;
+    }
+    @if $bottom == null {
+        $bottom: $top;
+    }
+    @if $left== null {
+        $left: $right;
+    }
+    @if $left == left {
+        border-width: $top $right $bottom $left;
+    } @else if $left == right{
+        border-width: $top $left $bottom $right;
+    }
+}

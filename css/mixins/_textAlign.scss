@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid text-align for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin text-align($side) {
+    @if $side == left {
+        text-align: $left;
+    } @else if $side == right {
+        text-align: $right;
+    }
+}

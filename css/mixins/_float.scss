@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid float for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin float($side)  {
+    @if $side == left {
+        float: $left;
+    } @else if $side == right {
+        float: $right;
+    }
+}

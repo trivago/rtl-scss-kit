@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid left / right position values for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin position-value($side, $value) {
+    @if $side == left {
+        #{$left}: $value;
+    } @else if $side == right {
+        #{$right}: $value;
+    }
+}
