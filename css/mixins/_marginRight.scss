@@ -1,0 +1,11 @@
+/**
+ * @description
+ * mixin generates valid margin-right for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin margin-right($margin) {
+    margin-#{$right}: $margin;
+}

@@ -1,0 +1,24 @@
+/**
+ * @description
+ * mixin generates valid margin for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin margin($top, $right: null, $bottom: null, $left: null) {
+    @if $right == null {
+        $right: $top;
+    }
+    @if $bottom == null {
+        $bottom: $top;
+    }
+    @if $left== null {
+        $left: $right;
+    }
+    @if $left == left {
+        margin: $top $right $bottom $left;
+    } @else if $left == right{
+        margin: $top $left $bottom $right;
+    }
+}
