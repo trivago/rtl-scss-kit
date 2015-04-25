@@ -1,0 +1,6 @@
+.slogan {
+  @include float(left);
+}
+.viewmode {
+  @include float(right);
+}
