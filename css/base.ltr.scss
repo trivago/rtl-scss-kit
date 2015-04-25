@@ -6,7 +6,7 @@
  *
  */
 
- @import "declarations/_ltr.scss";
- @import "mixins/_mixins.scss";
- @import "modules/_layout.scss";
- @import "modules/_header.scss";
+// import ltr-config
+@import "foundation/ltr";
+// styles
+@import "site";

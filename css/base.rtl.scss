@@ -6,7 +6,8 @@
  *
  */
 
- @import "declarations/_rtl.scss";
- @import "mixins/_mixins.scss";
- @import "modules/_layout.scss";
- @import "modules/_header.scss";
+// import rtl-config
+@import "foundation/rtl";
+// import styles
+@import "site";
+

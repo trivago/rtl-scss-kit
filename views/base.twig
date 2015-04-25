@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html {% block dirattr %}dir="ltr"{% endblock %}>
+<head>
+    {% block metatags %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="creinartz">
+    {% endblock %}
+    <title>rtl-scss-kit</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="css/base.ltr.css">
+    {% endblock %}
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <h1>rtl-scss-kit</h1>
+        <ul class="viewmode">
+            <li>
+                <a href="index.php?viewtype=ltr">ltr mode</a>
+            </li>
+            <li>
+                <a href="index.php?viewtype=rtl">rtl mode</a>
+            </li>
+        </ul>
+    </header>
+    <div class="">
+        <nav class="navigation">
+            <ul>
+                <li>Navigation</li>
+                <li>Navigation 2</li>
+                <li>Navigation 3</li>
+            </ul>
+        </nav>
+        <div class="">
+        </div>
+    </div>
+</div>
+</body>
