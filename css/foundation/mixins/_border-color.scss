@@ -1,0 +1,15 @@
+/**
+ * @description
+ * mixin generates valid border-color for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+
+@mixin border-color($colortop, $colorright, $colorbottom, $colorleft) {
+  @if $leading == left {
+    border-color: $colortop $colorright $colorbottom $colorleft;
+  } @else if $leading == right {
+    border-color: $colortop $colorleft $colorbottom $colorright;
+  }
+}

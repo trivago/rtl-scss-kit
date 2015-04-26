@@ -91,6 +91,13 @@
  */
 /**
  * @description
+ * mixin generates valid border-color for rtl and ltr css
+ *
+ * @author creinartz
+ *
+ */
+/**
+ * @description
  * mixin generates valid float for rtl and ltr css
  *
  * @author creinartz
